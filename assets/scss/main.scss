@@ -1,0 +1,34 @@
+$app-heading:#1fb9d4;
+$app-paragraph:#70d41f;
+$app-paragraph-familly:"Roboto","Helvetica";
+$display-flex:flex;
+$justify-content:center;
+$body:#007bff;
+
+body
+{
+  background:$body;
+}
+.card-desgin
+{
+    background: white;
+    padding: 3%;
+}
+.headline
+{
+    color:$app-heading;
+    text-align: center;
+    font-size:36px;
+}
+
+.paragraph
+{
+    color:$app-paragraph;
+    text-align: center;
+
+}
+#btn
+{
+    display:$display-flex;
+    justify-content:$justify-content;
+}

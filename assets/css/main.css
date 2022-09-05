@@ -1,0 +1,26 @@
+body {
+  background: #007bff;
+}
+
+.card-desgin {
+  background: white;
+  padding: 3%;
+}
+
+.headline {
+  color: #1fb9d4;
+  text-align: center;
+  font-size: 36px;
+}
+
+.paragraph {
+  color: #70d41f;
+  text-align: center;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */
