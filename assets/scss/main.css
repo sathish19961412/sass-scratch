@@ -1,16 +1,18 @@
 body {
-  background: #007bff;
+  background: blue;
 }
 
 .card-desgin {
   background: white;
-  padding: 3%;
+  padding: 2%;
+  margin-top: 2%;
 }
 
 .headline {
   color: #1fb9d4;
   text-align: center;
   font-size: 36px;
+  font-weight: "600";
 }
 
 .paragraph {

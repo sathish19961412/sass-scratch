@@ -1,24 +1,39 @@
+//Scss variables
+//Scss Datatypes
 $app-heading:#1fb9d4;
 $app-paragraph:#70d41f;
 $app-paragraph-familly:"Roboto","Helvetica";
 $display-flex:flex;
 $justify-content:center;
 $body:#007bff;
-
+$font-weight:(
+        "lightbold":"400",
+        "mediumbold":"500",
+        "bold":"600",
+    );
+$background:(
+        "primary":blue,
+        "success":green,
+        "danger":red,
+);
+$dark-mode:false;
+$theme-type:null;
 body
 {
-  background:$body;
+  background:map-get($map: $background, $key:primary );
 }
 .card-desgin
 {
     background: white;
-    padding: 3%;
+    padding: 2%;
+    margin-top: 2%;
 }
 .headline
 {
     color:$app-heading;
     text-align: center;
     font-size:36px;
+    font-weight:map-get($map: $font-weight, $key: "bold");
 }
 
 .paragraph
