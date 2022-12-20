@@ -5,6 +5,7 @@ $app-paragraph:#70d41f;
 $app-paragraph-familly:"Roboto","Helvetica";
 $display-flex:flex;
 $justify-content:center;
+$anchor:#ffffff;
 $body:#007bff;
 $font-weight:(
         "lightbold":"400",
@@ -12,26 +13,63 @@ $font-weight:(
         "bold":"600",
     );
 $background:(
-        "primary":blue,
-        "success":green,
+        "primary":#007bff,
+        "success":#909090,
         "danger":red,
 );
 $dark-mode:false;
 $theme-type:null;
+
+//Navigation
+.header
+{
+    padding:40px;
+    display:flex;
+    justify-content: space-between;
+ &__menus
+ {
+    display: flex;
+    list-style-type:none;
+ }
+ &__link
+ {
+    margin-right: 20px;
+    font-size:14px;
+  &.active > a
+  {
+    background:red;
+    padding:5px;
+
+  }
+ }
+}
+//End Navigation
 body
 {
-  background:map-get($map: $background, $key:primary );
+  background:map-get($map: $background, $key:primary);
+}
+a {
+    color: $anchor;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover{
+    color: $anchor;
+    text-decoration: none;
+    background-color: transparent;
 }
 .card-desgin
 {
     background: white;
     padding: 2%;
     margin-top: 2%;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius:50px;
 }
 .headline
 {
     color:$app-heading;
-    text-align: center;
     font-size:36px;
     font-weight:map-get($map: $font-weight, $key: "bold");
 }
@@ -39,11 +77,9 @@ body
 .paragraph
 {
     color:$app-paragraph;
-    text-align: center;
 
 }
 #btn
 {
     display:$display-flex;
-    justify-content:$justify-content;
 }

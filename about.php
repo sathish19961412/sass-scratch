@@ -7,25 +7,32 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/scss/main.css">
-    <title>Sass Scratch</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>About</title>
   </head>
   <body>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card-desgin">
-                        <h1 class="headline">Sass Scratch Project</h1>
-                        <p class="paragraph">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                        <div id="btn">
-                         <button class="btn btn-info">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <header class="header">
+        <div class="header__brand">
+          <!--Logo-->
+          <h3><a href="index.php">Logo Brand</a></h3>
         </div>
-    </section>
+        <div  >
+          <!--Menus-->
+          <nav>
+            <ol class="header__menus">
+               <li class="header__link active">
+                  <a href="index.php">Home</a>
+               </li>
+               <li class="header__link">
+                  <a href="about.php">About</a>
+               </li>
+               <li class="header__link">
+                  <a href="contact.php">Contact</a>
+               </li>
+           </ol>
+          </nav>
+        </div>
+    </header>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

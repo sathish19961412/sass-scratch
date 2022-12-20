@@ -1,26 +1,58 @@
+.header {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__menus {
+  display: flex;
+  list-style-type: none;
+}
+.header__link {
+  margin-right: 20px;
+  font-size: 14px;
+}
+.header__link.active > a {
+  background: red;
+  padding: 5px;
+}
+
 body {
   background: #007bff;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .card-desgin {
   background: white;
-  padding: 3%;
+  padding: 2%;
+  margin-top: 2%;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 50px;
 }
 
 .headline {
   color: #1fb9d4;
-  text-align: center;
   font-size: 36px;
+  font-weight: "600";
 }
 
 .paragraph {
   color: #70d41f;
-  text-align: center;
 }
 
 #btn {
   display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
